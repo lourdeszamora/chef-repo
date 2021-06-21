@@ -1,0 +1,11 @@
+DEPENDENCIES
+  3cx
+    path: .
+    metadata: true
+
+GRAPH
+  3cx (0.1.7)
+    hostname (~> 0.4.2)
+  hostname (0.4.2)
+    hostsfile (>= 0.0.0)
+  hostsfile (3.0.1)

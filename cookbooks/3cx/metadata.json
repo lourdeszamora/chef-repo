@@ -1,0 +1,38 @@
+{
+  "name": "3cx",
+  "description": "Installs/Configures 3cx",
+  "long_description": "Installs/Configures 3cx",
+  "maintainer": "The Authors",
+  "maintainer_email": "you@example.com",
+  "license": "All Rights Reserved",
+  "platforms": {
+
+  },
+  "dependencies": {
+    "hostname": "~> 0.4.2"
+  },
+  "providing": {
+
+  },
+  "attributes": {
+
+  },
+  "recipes": {
+
+  },
+  "version": "0.1.12",
+  "source_url": "",
+  "issues_url": "",
+  "privacy": false,
+  "chef_versions": [
+    [
+      ">= 12.14"
+    ]
+  ],
+  "ohai_versions": [
+
+  ],
+  "gems": [
+
+  ]
+}
