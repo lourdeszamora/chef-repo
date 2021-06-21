@@ -1,0 +1,17 @@
+## NOTE: THIS FILE IS MANAGED BY CHEF. CHANGES TO THIS FILE WILL BE REMOVED THE NEXT CHEF RUN. IF
+#  YOU WISH TO MAKE A MODIFICATION, YOU SHOULD DO SO IN THE CHEF KITCHEN FOR THIS SERVER AND RUN:
+#  `amoeba node push --node <%= node[:name] %>`
+
+description "Monit service manager"
+
+limit core unlimited unlimited
+
+start on runlevel [2345]
+stop on runlevel [!2345]
+
+expect daemon
+respawn
+
+exec <%= node[:monit][:bin_file] %> -c <%= node[:monit][:monitrc_file] %>
+
+pre-stop exec <%= node[:monit][:bin_file] %> -c <%= node[:monit][:monitrc_file] %> quit
